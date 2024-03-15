@@ -13,6 +13,8 @@
 		E988DC0E2BA4C3CF00A3EC28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E988DC0D2BA4C3CF00A3EC28 /* Preview Assets.xcassets */; };
 		E988DC182BA4CCE000A3EC28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC172BA4CCE000A3EC28 /* Model.swift */; };
 		E988DC1B2BA4CE9600A3EC28 /* Color+Extenson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC1A2BA4CE9600A3EC28 /* Color+Extenson.swift */; };
+		E988DC1F2BA4D07E00A3EC28 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC1E2BA4D07E00A3EC28 /* TaskListView.swift */; };
+		E988DC212BA4DEF000A3EC28 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		E988DC0D2BA4C3CF00A3EC28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E988DC172BA4CCE000A3EC28 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E988DC1A2BA4CE9600A3EC28 /* Color+Extenson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extenson.swift"; sourceTree = "<group>"; };
+		E988DC1E2BA4D07E00A3EC28 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 		E988DC162BA4C90700A3EC28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E988DC1E2BA4D07E00A3EC28 /* TaskListView.swift */,
+				E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 			files = (
 				E988DC182BA4CCE000A3EC28 /* Model.swift in Sources */,
 				E988DC1B2BA4CE9600A3EC28 /* Color+Extenson.swift in Sources */,
+				E988DC1F2BA4D07E00A3EC28 /* TaskListView.swift in Sources */,
+				E988DC212BA4DEF000A3EC28 /* AddTaskView.swift in Sources */,
 				E988DC092BA4C3C500A3EC28 /* ContentView.swift in Sources */,
 				E988DC072BA4C3C500A3EC28 /* ToDoListApp.swift in Sources */,
 			);
