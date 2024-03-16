@@ -15,7 +15,7 @@ class ViewModel: ObservableObject {
 
     //MARK: - Methods
     func addTask(with task: String) {
-        let model = TaskModel(title: task)
+        let model = TaskModel(title: task, isCompleted: false)
         tasks.append(model)
     }
 }

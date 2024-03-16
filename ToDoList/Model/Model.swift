@@ -10,5 +10,6 @@ import Foundation
 struct TaskModel: Identifiable {
     let id = UUID()
     let title: String
-    let isCompleted: Bool = false
+    var isCompleted: Bool
 }
+

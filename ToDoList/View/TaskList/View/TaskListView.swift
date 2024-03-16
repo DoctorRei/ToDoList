@@ -29,7 +29,9 @@ struct TaskListView: View {
                     //MARK: - Task List
                     List {
                         ForEach(viewModel.tasks) { task in
-                            Text(task.title)
+                            TaskRow(model: task) {
+                                print("Hello")
+                            }
                         }
                     }
                     .listStyle(.plain)
