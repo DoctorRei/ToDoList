@@ -10,11 +10,15 @@ import SwiftUI
 @main
 struct ToDoListApp: App {
     
+    //MARK: - Properties
     @AppStorage("isDarkMode") private var isDarkMode = true
+    @StateObject var viewModel = ViewModel()
     
+    //MARK: - Body
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
                 .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }

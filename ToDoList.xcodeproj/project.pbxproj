@@ -15,6 +15,7 @@
 		E988DC1B2BA4CE9600A3EC28 /* Color+Extenson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC1A2BA4CE9600A3EC28 /* Color+Extenson.swift */; };
 		E988DC1F2BA4D07E00A3EC28 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC1E2BA4D07E00A3EC28 /* TaskListView.swift */; };
 		E988DC212BA4DEF000A3EC28 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */; };
+		E998FDAB2BA5BD14000EF805 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E998FDAA2BA5BD14000EF805 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E988DC1A2BA4CE9600A3EC28 /* Color+Extenson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extenson.swift"; sourceTree = "<group>"; };
 		E988DC1E2BA4D07E00A3EC28 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		E998FDAA2BA5BD14000EF805 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		E988DC152BA4C8FF00A3EC28 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E998FDAA2BA5BD14000EF805 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				E988DC212BA4DEF000A3EC28 /* AddTaskView.swift in Sources */,
 				E988DC092BA4C3C500A3EC28 /* ContentView.swift in Sources */,
 				E988DC072BA4C3C500A3EC28 /* ToDoListApp.swift in Sources */,
+				E998FDAB2BA5BD14000EF805 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

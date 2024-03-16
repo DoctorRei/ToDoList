@@ -10,8 +10,8 @@ import SwiftUI
 struct AddTaskView: View {
     
     //MARK: - Properties
-    @State var newTask = ""
     @Environment (\.dismiss) private var dismiss
+    @EnvironmentObject var viewModel: ViewModel
     
     var body: some View {
         
@@ -19,7 +19,7 @@ struct AddTaskView: View {
         ZStack {
             LinearGradient(
                 colors: [Color.toDoBackgroundOne, Color.toDoBackgroundTwo],
-                 startPoint: .topLeading,
+                startPoint: .topLeading,
                 endPoint: .bottomTrailing
             )
             .ignoresSafeArea()
@@ -27,7 +27,7 @@ struct AddTaskView: View {
             VStack {
                 
                 //MARK: - TextField
-                TextField("Enter your new task", text: $newTask)
+                TextField("Enter your new task", text: $viewModel.newTask)
                     .font(.title2)
                     .padding()
                     .background(Color.primary.opacity(0.15))
@@ -35,6 +35,7 @@ struct AddTaskView: View {
                 
                 //MARK: - Button
                 Button {
+                    viewModel.addTask(with: viewModel.newTask)
                     dismiss()
                 } label: {
                     Text("Add Task")
@@ -65,18 +66,22 @@ struct AddTaskView: View {
                         .font(.headline)
                         .foregroundColor(.toDoAccent)
                 }
-                
-
             }
+        }
+        .onAppear {
+            viewModel.newTask = ""
         }
     }
 }
 
+//MARK: - Preview
 struct AddTaskView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             AddTaskView()
-                .preferredColorScheme(.dark )
+                .environmentObject(ViewModel())
+                .preferredColorScheme(.dark)
+            
         }
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TaskListView: View {
     
+    @EnvironmentObject var viewModel: ViewModel
+    
     //MARK: - Body
     
     var body: some View {
@@ -18,17 +20,29 @@ struct TaskListView: View {
                 //MARK: - Background color
                 LinearGradient(
                     colors: [Color.toDoBackgroundOne, Color.toDoBackgroundTwo],
-                     startPoint: .topLeading,
+                    startPoint: .topLeading,
                     endPoint: .bottomTrailing
                 )
                 .ignoresSafeArea()
-            }
-            .navigationTitle("To Do List")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: AddTaskView()) {
-                        Image(systemName: "plus")
-                            .foregroundColor(Color.toDoPrimary)
+                VStack {
+                    
+                    //MARK: - Task List
+                    List {
+                        ForEach(viewModel.tasks) { task in
+                            Text(task.title)
+                        }
+                    }
+                    .listStyle(.plain)
+                }
+                
+                //MARK: - Nav Bar
+                .navigationTitle("To Do List")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink(destination: AddTaskView()) {
+                            Image(systemName: "plus")
+                                .foregroundColor(Color.toDoPrimary)
+                        }
                     }
                 }
             }
@@ -37,10 +51,10 @@ struct TaskListView: View {
 }
 
 //MARK: - Preview
-
 struct TaskListView_Previews: PreviewProvider {
     static var previews: some View {
         TaskListView()
+            .environmentObject(ViewModel())
             .preferredColorScheme(.dark)
     }
 }
