@@ -17,6 +17,10 @@
 		E988DC212BA4DEF000A3EC28 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */; };
 		E998FDAB2BA5BD14000EF805 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E998FDAA2BA5BD14000EF805 /* ViewModel.swift */; };
 		E9A429C92BA5FFEF00943A6C /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A429C82BA5FFEF00943A6C /* TaskRow.swift */; };
+		E9A6591C2BA6EF480049CC19 /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A6591B2BA6EF480049CC19 /* EditTaskView.swift */; };
+		E9A6591F2BA6F7BB0049CC19 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A6591E2BA6F7BB0049CC19 /* CustomTextField.swift */; };
+		E9A659212BA6F9DF0049CC19 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A659202BA6F9DF0049CC19 /* CustomButton.swift */; };
+		E9A659232BA702B80049CC19 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A659222BA702B80049CC19 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		E998FDAA2BA5BD14000EF805 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E9A429C82BA5FFEF00943A6C /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		E9A6591B2BA6EF480049CC19 /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
+		E9A6591E2BA6F7BB0049CC19 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E9A659202BA6F9DF0049CC19 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E9A659222BA702B80049CC19 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 				E988DC162BA4C90700A3EC28 /* View */,
 				E988DC152BA4C8FF00A3EC28 /* ViewModel */,
 				E988DC142BA4C8F400A3EC28 /* Model */,
+				E9A6591D2BA6F7A70049CC19 /* Components */,
 				E988DC0A2BA4C3CF00A3EC28 /* Assets.xcassets */,
 				E988DC0C2BA4C3CF00A3EC28 /* Preview Content */,
 			);
@@ -102,6 +111,7 @@
 		E988DC162BA4C90700A3EC28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9A6591A2BA6EDEE0049CC19 /* EditTask */,
 				E9A429C62BA5FEC200943A6C /* AddTask */,
 				E9A429C12BA5FE7700943A6C /* TaskList */,
 			);
@@ -163,6 +173,24 @@
 			children = (
 			);
 			path = SubView;
+			sourceTree = "<group>";
+		};
+		E9A6591A2BA6EDEE0049CC19 /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				E9A6591B2BA6EF480049CC19 /* EditTaskView.swift */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
+		E9A6591D2BA6F7A70049CC19 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E9A6591E2BA6F7BB0049CC19 /* CustomTextField.swift */,
+				E9A659202BA6F9DF0049CC19 /* CustomButton.swift */,
+				E9A659222BA702B80049CC19 /* BackgroundView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,11 +263,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9A6591C2BA6EF480049CC19 /* EditTaskView.swift in Sources */,
 				E988DC182BA4CCE000A3EC28 /* Model.swift in Sources */,
 				E988DC1B2BA4CE9600A3EC28 /* Color+Extenson.swift in Sources */,
 				E988DC1F2BA4D07E00A3EC28 /* TaskListView.swift in Sources */,
+				E9A6591F2BA6F7BB0049CC19 /* CustomTextField.swift in Sources */,
 				E9A429C92BA5FFEF00943A6C /* TaskRow.swift in Sources */,
+				E9A659232BA702B80049CC19 /* BackgroundView.swift in Sources */,
 				E988DC212BA4DEF000A3EC28 /* AddTaskView.swift in Sources */,
+				E9A659212BA6F9DF0049CC19 /* CustomButton.swift in Sources */,
 				E988DC092BA4C3C500A3EC28 /* ContentView.swift in Sources */,
 				E988DC072BA4C3C500A3EC28 /* ToDoListApp.swift in Sources */,
 				E998FDAB2BA5BD14000EF805 /* ViewModel.swift in Sources */,

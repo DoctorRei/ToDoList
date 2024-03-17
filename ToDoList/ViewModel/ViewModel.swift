@@ -18,4 +18,14 @@ class ViewModel: ObservableObject {
         let model = TaskModel(title: task, isCompleted: false)
         tasks.append(model)
     }
+    
+    func isCompletedTask(task: TaskModel) {
+        if let index = tasks.firstIndex(where: { $0.id == task.id }) {
+            tasks[index].isCompleted.toggle()
+        }
+    }
+    
+    func deleteTask(with task: IndexSet) {
+        tasks.remove(atOffsets: task)
+    }
 }

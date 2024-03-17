@@ -17,34 +17,16 @@ struct AddTaskView: View {
         
         //MARK: - Background
         ZStack {
-            LinearGradient(
-                colors: [Color.toDoBackgroundOne, Color.toDoBackgroundTwo],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
+            BackgroundView()
             
             VStack {
                 
                 //MARK: - TextField
-                TextField("Enter your new task", text: $viewModel.newTask)
-                    .font(.title2)
-                    .padding()
-                    .background(Color.primary.opacity(0.15))
-                    .cornerRadius(10)
+                CustomTextField(placeholder: "Enter your new task")
                 
                 //MARK: - Button
-                Button {
+                CustomButton(titleButton: "Add new Task") {
                     viewModel.addTask(with: viewModel.newTask)
-                    dismiss()
-                } label: {
-                    Text("Add Task")
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .font(.title2)
-                        .foregroundColor(Color.toDoBackgroundOne)
-                        .background(Color.toDoAccent)
-                        .cornerRadius(10)
                 }
                 Spacer()
             }

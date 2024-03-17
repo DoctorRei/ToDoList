@@ -33,6 +33,7 @@ struct TaskRow: View {
                 )
                 .foregroundColor(.toDoAccent)
             }
+            .buttonStyle(.borderless)
             
         }
         .font(.headline)
