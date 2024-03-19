@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E97AA5C62BA9E1E100D83E8E /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97AA5C52BA9E1E100D83E8E /* LaunchScreen.swift */; };
+		E97AA5C82BA9E43A00D83E8E /* CustomProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97AA5C72BA9E43A00D83E8E /* CustomProgressBar.swift */; };
+		E97AA5CA2BA9E88600D83E8E /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97AA5C92BA9E88600D83E8E /* ContainerView.swift */; };
 		E988DC072BA4C3C500A3EC28 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC062BA4C3C500A3EC28 /* ToDoListApp.swift */; };
 		E988DC092BA4C3C500A3EC28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC082BA4C3C500A3EC28 /* ContentView.swift */; };
 		E988DC0B2BA4C3CF00A3EC28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E988DC0A2BA4C3CF00A3EC28 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E97AA5C52BA9E1E100D83E8E /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		E97AA5C72BA9E43A00D83E8E /* CustomProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressBar.swift; sourceTree = "<group>"; };
+		E97AA5C92BA9E88600D83E8E /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		E988DC032BA4C3C500A3EC28 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E988DC062BA4C3C500A3EC28 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		E988DC082BA4C3C500A3EC28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E97AA5C42BA9E1C700D83E8E /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E97AA5C92BA9E88600D83E8E /* ContainerView.swift */,
+				E97AA5C52BA9E1E100D83E8E /* LaunchScreen.swift */,
+				E97AA5C72BA9E43A00D83E8E /* CustomProgressBar.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		E988DBFA2BA4C3C500A3EC28 = {
 			isa = PBXGroup;
 			children = (
@@ -75,10 +91,10 @@
 			children = (
 				E988DC062BA4C3C500A3EC28 /* ToDoListApp.swift */,
 				E988DC082BA4C3C500A3EC28 /* ContentView.swift */,
-				E988DC192BA4CD2900A3EC28 /* Extensions */,
 				E988DC162BA4C90700A3EC28 /* View */,
 				E988DC152BA4C8FF00A3EC28 /* ViewModel */,
 				E988DC142BA4C8F400A3EC28 /* Model */,
+				E988DC192BA4CD2900A3EC28 /* Extensions */,
 				E9A6591D2BA6F7A70049CC19 /* Components */,
 				E988DC0A2BA4C3CF00A3EC28 /* Assets.xcassets */,
 				E988DC0C2BA4C3CF00A3EC28 /* Preview Content */,
@@ -113,8 +129,9 @@
 		E988DC162BA4C90700A3EC28 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E9A6591A2BA6EDEE0049CC19 /* EditTask */,
+				E97AA5C42BA9E1C700D83E8E /* LaunchScreen */,
 				E9A429C62BA5FEC200943A6C /* AddTask */,
+				E9A6591A2BA6EDEE0049CC19 /* EditTask */,
 				E9A429C12BA5FE7700943A6C /* TaskList */,
 			);
 			path = View;
@@ -274,10 +291,13 @@
 				E9A429C92BA5FFEF00943A6C /* TaskRow.swift in Sources */,
 				E9A659232BA702B80049CC19 /* BackgroundView.swift in Sources */,
 				E988DC212BA4DEF000A3EC28 /* AddTaskView.swift in Sources */,
+				E97AA5C62BA9E1E100D83E8E /* LaunchScreen.swift in Sources */,
 				E9A659212BA6F9DF0049CC19 /* CustomButton.swift in Sources */,
 				E988DC092BA4C3C500A3EC28 /* ContentView.swift in Sources */,
 				E988DC072BA4C3C500A3EC28 /* ToDoListApp.swift in Sources */,
+				E97AA5CA2BA9E88600D83E8E /* ContainerView.swift in Sources */,
 				E9A4D31F2BA8A5A500580A72 /* NoTasksView.swift in Sources */,
+				E97AA5C82BA9E43A00D83E8E /* CustomProgressBar.swift in Sources */,
 				E998FDAB2BA5BD14000EF805 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,7 +17,7 @@ struct ToDoListApp: App {
     //MARK: - Body
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContainerView()
                 .environmentObject(viewModel)
                 .preferredColorScheme(isDarkMode ? .dark : .light)
         }
