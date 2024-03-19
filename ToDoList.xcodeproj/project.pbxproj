@@ -17,6 +17,7 @@
 		E988DC212BA4DEF000A3EC28 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */; };
 		E998FDAB2BA5BD14000EF805 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E998FDAA2BA5BD14000EF805 /* ViewModel.swift */; };
 		E9A429C92BA5FFEF00943A6C /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A429C82BA5FFEF00943A6C /* TaskRow.swift */; };
+		E9A4D31F2BA8A5A500580A72 /* NoTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A4D31E2BA8A5A500580A72 /* NoTasksView.swift */; };
 		E9A6591C2BA6EF480049CC19 /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A6591B2BA6EF480049CC19 /* EditTaskView.swift */; };
 		E9A6591F2BA6F7BB0049CC19 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A6591E2BA6F7BB0049CC19 /* CustomTextField.swift */; };
 		E9A659212BA6F9DF0049CC19 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A659202BA6F9DF0049CC19 /* CustomButton.swift */; };
@@ -35,6 +36,7 @@
 		E988DC202BA4DEF000A3EC28 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		E998FDAA2BA5BD14000EF805 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		E9A429C82BA5FFEF00943A6C /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		E9A4D31E2BA8A5A500580A72 /* NoTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTasksView.swift; sourceTree = "<group>"; };
 		E9A6591B2BA6EF480049CC19 /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
 		E9A6591E2BA6F7BB0049CC19 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E9A659202BA6F9DF0049CC19 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A429C82BA5FFEF00943A6C /* TaskRow.swift */,
+				E9A4D31E2BA8A5A500580A72 /* NoTasksView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				E9A659212BA6F9DF0049CC19 /* CustomButton.swift in Sources */,
 				E988DC092BA4C3C500A3EC28 /* ContentView.swift in Sources */,
 				E988DC072BA4C3C500A3EC28 /* ToDoListApp.swift in Sources */,
+				E9A4D31F2BA8A5A500580A72 /* NoTasksView.swift in Sources */,
 				E998FDAB2BA5BD14000EF805 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

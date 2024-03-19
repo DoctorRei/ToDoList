@@ -28,6 +28,7 @@ struct AddTaskView: View {
                 CustomButton(titleButton: "Add new Task") {
                     viewModel.addTask(with: viewModel.newTask)
                 }
+                .disabled(viewModel.newTask.isEmpty)
                 Spacer()
             }
             .padding()

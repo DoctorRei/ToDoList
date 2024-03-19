@@ -11,6 +11,8 @@ struct EditTaskView: View {
     
     //MARK: - Properties
     @EnvironmentObject var viewModel: ViewModel
+    @Environment (\.dismiss) private var dismiss
+    var task: TaskModel
     
     var body: some View {
         
@@ -25,7 +27,7 @@ struct EditTaskView: View {
             /// Cancel Button
             .overlay(alignment: .topLeading) {
                 Button {
-                    
+                    dismiss()
                 } label: {
                     Text("Cancel")
                         .frame(width: 56)
@@ -35,23 +37,28 @@ struct EditTaskView: View {
             }
             .padding(.vertical)
             
-            CustomTextField(placeholder: "Edit your  task")
+            //MARK: - TextField And Accept Button
+            CustomTextField(placeholder: "Edit your task")
             CustomButton(titleButton: "Save") {
-                
+                viewModel.updateTask(with: task.id, and: viewModel.newTask)
             }
+            .disabled(viewModel.newTask.isEmpty)
             Spacer()
         }
         .padding()
         .background(
             BackgroundView()
         )
+        .onAppear {
+            viewModel.newTask = task.title
+        }
     }
 }
 
 //MARK: - Preview
 struct EditTaskView_Previews: PreviewProvider {
     static var previews: some View {
-        EditTaskView()
+        EditTaskView(task: TaskModel(title: "test 1", isCompleted: false))
             .environmentObject(ViewModel())
             .preferredColorScheme(.dark)
     }
